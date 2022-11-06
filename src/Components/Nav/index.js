@@ -95,6 +95,18 @@ function Nav({ handleClick }) {
               </h3>
             </span>
           </li>
+          <li className="mx-2">
+            <span
+            >
+              <h3>
+                <a target="_blank" data-testid="link" href="https://branchburgsbest.square.site/s/order">
+                  <span>
+                    <h3>Order Now</h3>
+                  </span>
+                </a>
+              </h3>
+            </span>
+          </li>
 
          
          
