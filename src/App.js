@@ -17,22 +17,22 @@ function App() {
     if (currentPage === "About") {
       return <About />;
     }
-    if (currentPage === "Resume") {
+    if (currentPage === "Catering") {
       return <Catering />;
     }
-    if (currentPage === "Portfolio") {
+    if (currentPage === "Landing") {
       return <Landing />;
     }
-    if (currentPage === "Contact") {
+    if (currentPage === "Menu") {
       return <Menu />;
     }
-    if (currentPage === "Movie") {
+    if (currentPage === "OrderContact") {
       return <OrderContact />;
     }
-    if (currentPage === "Movie") {
+    if (currentPage === "ContactForm") {
       return <ContactForm />;
     }
-    if (currentPage === "Movie") {
+    if (currentPage === "Footer") {
       return <Footer/>;
     }
   };
@@ -45,6 +45,13 @@ function App() {
       <Hero></Hero>
       <Nav currentPage={currentPage} handleClick={handlePageChange}></Nav>
       <main id="Main">{renderPage()}</main>
+      <body className="Body">
+        <div className="BodyContainer">
+        </div>
+      </body>
+
+      
+      <div> ______ </div>
       <About/>
       <Catering/>
       <Landing/>

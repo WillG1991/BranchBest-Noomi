@@ -3,7 +3,7 @@ import React from "react";
 function Catering() {
     return (
       <div>
-        Catering
+        This is the catering section!
       </div>
     );
   }

@@ -3,7 +3,7 @@ import React from "react";
 function OrderContact() {
     return (
       <div>
-        OrderContact
+       This is the order contact section
       </div>
     );
   }
