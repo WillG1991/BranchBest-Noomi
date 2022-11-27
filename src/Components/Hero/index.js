@@ -2,9 +2,9 @@ import React from "react";
 
 function Hero() {
     return (
-      <div>
-        Hero
-      </div>
+      <section id="hero">
+             <h1>Where It Always Feels Like Home</h1>
+             </section>
     );
   }
   

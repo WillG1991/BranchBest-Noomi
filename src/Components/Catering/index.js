@@ -1,10 +1,16 @@
 import React from "react";
+import { Container} from "@mui/system";
+
 
 function Catering() {
     return (
+      <Container>
+      <section id="about">
       <div>
-        This is the catering section!
+      ---  Catering Section ---
       </div>
+  </section>
+  </Container>
     );
   }
   

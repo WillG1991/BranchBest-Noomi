@@ -43,22 +43,26 @@ function App() {
   return (
     <div className="back">
       <Hero></Hero>
-      <Nav currentPage={currentPage} handleClick={handlePageChange}></Nav>
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange}></Nav>
       <main id="Main">{renderPage()}</main>
       <body className="Body">
         <div className="BodyContainer">
         </div>
       </body>
+      <Footer/>
+
+   
 
       
-      <div> ______ </div>
+      {/* <div> ______ </div>
+      <Nav style={{position: "relative !important", marginTop: "30px"}} currentPage={currentPage} handleClick={handlePageChange}></Nav>
       <About/>
       <Catering/>
       <Landing/>
       <Menu/>
       <OrderContact/>
       <ContactForm/>
-      <Footer/>
+      <Footer/> */}
     </div>
     
     
