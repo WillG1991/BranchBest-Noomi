@@ -54,12 +54,15 @@ h1 {
 
 section
 {
-    background-color:yellowgreen;
+ 
     width: 80%;
     margin-right:auto;
     margin-left:auto;
 }
 
+.Footer {
+  background-color: blue;
+}
 
 
 col {
@@ -120,6 +123,10 @@ h3 {
   font-family: Montserrat;
 }
 
+
+footer {
+  background-color: aquamarine;
+}
 /* large screen size */
 @media screen and (min-width: 60em) {
 

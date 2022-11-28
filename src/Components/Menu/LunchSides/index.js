@@ -1,95 +1,242 @@
-import React from "react";
-import { Card } from "@mui/material";
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
-import TableCell, { tableCellClasses } from '@mui/material/TableCell';
-import { Container } from "@mui/system";
-import {Box} from "@mui/material";
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-const StyledTableCell = styled(TableCell)(({ theme }) => ({
-    [`&.${tableCellClasses.head}`]: {
-      backgroundColor: theme.palette.common.black,
-      color: theme.palette.common.white,
-    },
-    [`&.${tableCellClasses.body}`]: {
-      fontSize: 14,
-    },
-  }));
-  
-  const StyledTableRow = styled(TableRow)(({ theme }) => ({
-    '&:nth-of-type(odd)': {
-      backgroundColor: theme.palette.action.hover,
-    },
-    // hide last border
-    '&:last-child td, &:last-child th': {
-      border: 0,
-    },
-  }));
 
+const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+}));
 
-function createData(name, description, price) {
-  return { name, description, price };
-}
-
-const rows = [
-  createData('Fries', "Delicious Straight Cut French Fries or Sweet Potato Fries.", "$3.50 - $4.50"),
-  createData('Baked Potato', "Baked white potato or sweet potato. Additional toppings available for extra charge.", "$3.50 - $4.50" ),
-  createData('Mozzarella Sticks', "Mozzarella sticks. Served with marinara sauce.", "$5.00" ),
-  createData('Chicken Fingers', "Crispy chicken tenders. Served a la carte.", "$7.00" ),
-  createData('Chicken Wings', "Crispy fried breaded chicken wings.", "$7.00" ),
-  createData('Caesar Salad', "Chopped romaine, parmesan cheese, croutons, & caesar dressing. Served as a side, full, or wrap.", "$4.25 - $8.00" ),
-  createData('Chicken Salad', "House made chicken salad.", "$3.00 - $5.50" ),
-  createData('Tuna Salad', "House made tuna salad.", "$3.00 - $5.50" ),
-  createData('Egg Salad', "House made egg salad.", "$3.00 - $5.50" ),
-  
-];
-
-function LunchSides() {
+export default function
+    Lunch() {
     return (
-      
-      <Container>
-        <Box>
-      <section id="Lunch">
-       
-        <h4 align="center"> Lunch Sides</h4>
-        <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-        <TableHead>
-          <StyledTableRow>
-          <StyledTableCell>Name</StyledTableCell>
-            <StyledTableCell align="center">Description</StyledTableCell>
-            <StyledTableCell align="center">Price</StyledTableCell>
-     
-            
-          </StyledTableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <StyledTableRow
-              key={row.name}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-            >
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
-              <TableCell align="center">{row.description}</TableCell>
-              <TableCell align="center">{row.price}</TableCell>
-             
-            </StyledTableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
-      </section>
-      </Box>
-  </Container>
- 
+        // ROW 1 START
+        <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={2}>
+                {/* ----------------------------------------ITEM 1 Start-------------------------- */}
+                <Grid item xs={4}>
+                    <Item>    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <Box sx={{ my: 3, mx: 2 }}>
+                            <Grid container alignItems="center">
+                                <Grid item xs>
+                                    <Typography gutterBottom variant="h4" component="div">
+                                    Fries
+                                    </Typography>
+                                </Grid>
+                                <Grid item>
+                                    <Typography gutterBottom variant="h6" component="div">
+                                        
+$3.50 - $4.50
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                            <Typography color="text.secondary" variant="body2">
+                            Delicious Straight Cut French Fries or Sweet Potato Fries                            </Typography>
+                        </Box>
+                    </Box></Item>
+                </Grid>
+                {/* -----------------------------------ITEM 1 END-----------------------------------*/}
+                {/* ----------------------------------ITEM 2 Start--------------------------------- */}
+                <Grid item xs={4}>
+                    <Item>    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <Box sx={{ my: 3, mx: 2 }}>
+                            <Grid container alignItems="center">
+                                <Grid item xs>
+                                    <Typography gutterBottom variant="h4" component="div">
+                                    Baked Potato
+                                    </Typography>
+                                </Grid>
+                                <Grid item>
+                                    <Typography gutterBottom variant="h6" component="div">
+                                       
+$3.50 - $4.50
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                            <Typography color="text.secondary" variant="body2">
+                            Baked white potato or sweet potato. Additional toppings available for extra charge.                            </Typography>
+                        </Box>
+                    </Box></Item>
+                </Grid>
+                {/* --------------------------------ITEM 2 END------------------------ */}
+                {/* -----------------------------ITEM 3 START----------------------- */}
+                <Grid item xs={4}>
+                    <Item>    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <Box sx={{ my: 3, mx: 2 }}>
+                            <Grid container alignItems="center">
+                                <Grid item xs>
+                                    <Typography gutterBottom variant="h4" component="div">
+                                    Mozzarella Sticks
+                                    </Typography>
+                                </Grid>
+                                <Grid item>
+                                    <Typography gutterBottom variant="h6" component="div">
+                                    $5.00
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                            <Typography color="text.secondary" variant="body2">
+                            Mozzarella sticks. Served with marinara sauce.                            </Typography>
+                        </Box>
+                    </Box></Item>
+                </Grid>
+                {/* ------------------------------------ITEM 3 End------------------------------- */}
+            </Grid>
+            {/* -------------------------------------------------------------Row 1 End--------------------------------- */}
+            <br></br>
+            <br></br>
+            {/* -------------------------------------------------------------Row 2 Start------------------------------------- */}
+            <Grid container spacing={2}>
+                {/* ---------------------------------------ITEM 4 Start------------------------------- */}
+                <Grid item xs={4}>
+                    <Item>    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <Box sx={{ my: 3, mx: 2 }}>
+                            <Grid container alignItems="center">
+                                <Grid item xs>
+                                    <Typography gutterBottom variant="h4" component="div">
+                                    Chicken Fingers
+                                    </Typography>
+                                </Grid>
+                                <Grid item>
+                                    <Typography gutterBottom variant="h6" component="div">
+                                    $7.00
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                            <Typography color="text.secondary" variant="body2">
+                            Crispy chicken tenders. Served a la carte.                            </Typography>
+                        </Box>
+                    </Box></Item>
+                </Grid>
+                {/* ------------------------------------ITEM 4 END-------------------------------------------- */}
+                {/* ---------------------------------ITEM 5 Start------------------------------------------ */}
+                <Grid item xs={4}>
+                    <Item>    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <Box sx={{ my: 3, mx: 2 }}>
+                            <Grid container alignItems="center">
+                                <Grid item xs>
+                                    <Typography gutterBottom variant="h4" component="div">
+                                    Chicken Wings
+                                    </Typography>
+                                </Grid>
+                                <Grid item>
+                                    <Typography gutterBottom variant="h6" component="div">
+                                    $7.00
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                            <Typography color="text.secondary" variant="body2">
+                            Crispy fried breaded chicken wings.                            </Typography>
+                        </Box>
+                    </Box></Item>
+                </Grid>
+                {/* ---------------ITEM 5 END------------ */}
+                {/* ---------------ITEM 6 Start-----------------*/}
+                <Grid item xs={4}>
+                    <Item>    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <Box sx={{ my: 3, mx: 2 }}>
+                            <Grid container alignItems="center">
+                                <Grid item xs>
+                                    <Typography gutterBottom variant="h4" component="div">
+                                    Caesar Salad
+                                    </Typography>
+                                </Grid>
+                                <Grid item>
+                                    <Typography gutterBottom variant="h6" component="div">
+                                    $4.25 - $8.00
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                            <Typography color="text.secondary" variant="body2">
+                            Chopped romaine, parmesan cheese, croutons, & caesar dressing. Served as a side, full, or wrap.                                           </Typography>
+                        </Box>
+                    </Box></Item>
+                    
+                </Grid>
+                {/* --------ITEM 6 End----------- */}
+                <br></br>
+                <br></br>
+                {/* -----------------------------------------------Row 3 START-------------------------------------------------- */}
+                 {/* ---------------ITEM 7 Start-----------------*/}
+                 <Grid item xs={4}>
+                    <Item>    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <Box sx={{ my: 3, mx: 2 }}>
+                            <Grid container alignItems="center">
+                                <Grid item xs>
+                                    <Typography gutterBottom variant="h4" component="div">
+                                    Chicken Salad
+                                    </Typography>
+                                </Grid>
+                                <Grid item>
+                                    <Typography gutterBottom variant="h6" component="div">
+                                    $3.00 - $5.50
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                            <Typography color="text.secondary" variant="body2">
+                            House made chicken salad.                                          </Typography>
+                        </Box>
+                    </Box></Item>
+                    
+                </Grid>
+                {/* ---------------ITEM 7 End-----------------*/}
+                {/* ---------------ITEM 8 Start-----------------*/}
+                <Grid item xs={4}>
+                    <Item>    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <Box sx={{ my: 3, mx: 2 }}>
+                            <Grid container alignItems="center">
+                                <Grid item xs>
+                                    <Typography gutterBottom variant="h4" component="div">
+                                    Tuna Salad
+                                    </Typography>
+                                </Grid>
+                                <Grid item>
+                                    <Typography gutterBottom variant="h6" component="div">
+                                    $3.00 - $5.50
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                            <Typography color="text.secondary" variant="body2">
+                            House made tuna salad.                                          </Typography>
+                        </Box>
+                    </Box></Item>
+                    
+                </Grid>
+                {/* ---------------ITEM 8 End-----------------*/}
+                {/* ---------------ITEM 9 Start-----------------*/}
+                <Grid item xs={4}>
+                    <Item>    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <Box sx={{ my: 3, mx: 2 }}>
+                            <Grid container alignItems="center">
+                                <Grid item xs>
+                                    <Typography gutterBottom variant="h4" component="div">
+                                    Egg Salad
+                                    </Typography>
+                                </Grid>
+                                <Grid item>
+                                    <Typography gutterBottom variant="h6" component="div">
+                                    $3.00 - $5.50
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                            <Typography color="text.secondary" variant="body2">
+                            House made egg salad.                                         </Typography>
+                        </Box>
+                    </Box></Item>
+                    
+                </Grid>
+                {/* ---------------ITEM 9 End-----------------*/}
+                
+            </Grid>
+        </Box>
+
+
     );
-  }
-  
-  export default LunchSides;
+}

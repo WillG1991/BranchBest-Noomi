@@ -25,10 +25,11 @@ function Menu() {
         <p><a href="https://branchburgsbest.square.site/">Order Online</a></p>
         </Card>
       </div>
-       
+      <h2 align="center"> Lunch</h2>
         <Lunch/>
+        <h2 align="center"> Lunch Sides</h2>
         <LunchSides/>
-        <h4 align="center"> Deli Sandwiches</h4>
+        <h2 align="center"> Deli Sandwiches</h2>
         <DeliSandwiches/>
       </section>
       </Box>

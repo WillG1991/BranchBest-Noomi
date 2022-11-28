@@ -1,29 +1,45 @@
-import React from "react";
-import Card from '@mui/material/Card';
-import { Box } from "@mui/system";
-import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import Hours from './Hours';
+import { Container } from '@mui/system';
+import MailingList from './MailingList';
 
-function Footer() {
-    return (
-     
-      <Box>
-      <section>
-        <Card>
-        <div>
-        Join Our Mailing List
-        </div>
-        <div>
-        <TextField id="outlined-basic" label="Email" variant="outlined" />
-        </div>
-        <Button variant="contained">Submit</Button>
-        </Card>
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
 
+export default function Footer() {
+  return (
+    <footer className="w-100 mt-auto bg-tertiary p-4">
    
-      </section>
-       </Box>
-    
-    );
-  }
-  
-  export default Footer;
+      <Grid container spacing={2}>
+        <Grid item xs={4}>
+          <Item>
+            <Hours/>
+            </Item>
+        </Grid>
+        <Grid item xs={4}>
+          <Item>
+            <MailingList/>
+          </Item>
+        </Grid>
+      </Grid>
+      
+      </footer>
+  );
+}
+
+
+
+
+
+
+
+

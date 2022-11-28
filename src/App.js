@@ -49,21 +49,15 @@ function App() {
         <div className="BodyContainer">
         </div>
       </body>
-      <Footer/>
+      </div>
+    
+     
 
    
 
       
-      <div> ______ </div>
-      {/* <Nav style={{position: "relative !important", marginTop: "30px"}} currentPage={currentPage} handleClick={handlePageChange}></Nav>
-      <About/>
-      <Catering/>
-      <Landing/>
-      <Menu/>
-      <OrderContact/>
-      <ContactForm/>
-      <Footer/> */}
-    </div>
+ 
+   
     
     
   );
