@@ -2,6 +2,7 @@ import emailjs from 'emailjs-com';
 import React, { useRef } from 'react';
 import { useState } from 'react';
 import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 
 
 
@@ -34,7 +35,8 @@ export const ContactForm = () => {
 
 return (
   <Container>
- <section class="contact-form justify-content-center ">
+    <Box>
+ <section class="Contact">
 <h2 class="text-center varela-font">Contact Me</h2>
 <form ref={form} onSubmit={sendEmail}>
   <div class="borderBoxContact ">
@@ -67,6 +69,7 @@ return (
   </div>
 </form>
 </section>
+</Box>
 </Container>
 );
 }

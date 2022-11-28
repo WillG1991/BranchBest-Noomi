@@ -52,6 +52,22 @@ h1 {
   background-size: cover;
 }
 
+section
+{
+    background-color:yellowgreen;
+    width: 80%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+
+col {
+  width: 200px;
+  display: inline-block;
+}
+
+
 /* Hours section - BYOB, times, deliveries */
 #hours {
   font-family: Playfair Display;

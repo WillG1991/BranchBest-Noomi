@@ -29,7 +29,7 @@ function App() {
     if (currentPage === "OrderContact") {
       return <OrderContact />;
     }
-    if (currentPage === "ContactForm") {
+    if (currentPage === "Contact") {
       return <ContactForm />;
     }
     if (currentPage === "Footer") {
@@ -54,8 +54,8 @@ function App() {
    
 
       
-      {/* <div> ______ </div>
-      <Nav style={{position: "relative !important", marginTop: "30px"}} currentPage={currentPage} handleClick={handlePageChange}></Nav>
+      <div> ______ </div>
+      {/* <Nav style={{position: "relative !important", marginTop: "30px"}} currentPage={currentPage} handleClick={handlePageChange}></Nav>
       <About/>
       <Catering/>
       <Landing/>
