@@ -18,6 +18,7 @@ export default function
     Lunch() {
     return (
         // ROW 1 START
+        <div className="MenuBox">
         <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
                 {/* ----------------------------------------ITEM 1 Start-------------------------- */}
@@ -165,7 +166,7 @@ export default function
                 {/* --------ITEM 6 End----------- */}
             </Grid>
         </Box>
-
+        </div>
 
     );
 }

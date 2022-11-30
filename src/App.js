@@ -8,6 +8,7 @@ import Nav from './Components/Nav';
 import OrderContact from './Components/OrderContact';
 import ContactForm from './Components/Contact';
 import Footer from './Components/Footer';
+import "./App.css";
 
 
 function App() {
@@ -32,9 +33,7 @@ function App() {
     if (currentPage === "Contact") {
       return <ContactForm />;
     }
-    if (currentPage === "Footer") {
-      return <Footer/>;
-    }
+    
   };
 
   
@@ -44,13 +43,14 @@ function App() {
     <div className="back">
       <Hero></Hero>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange}></Nav>
-      <main id="Main">{renderPage()}</main>
+      <main className="Main" id="Main">{renderPage()}</main>
       <body className="Body">
         <div className="BodyContainer">
         </div>
       </body>
+      <Footer/>
       </div>
-    
+  
      
 
    

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -12,6 +11,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import BBLogo from '../../Images/Logo.png'
 
 
 const drawerWidth = 240;
@@ -66,7 +66,7 @@ function Nav(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-               Branchburgs Best
+               <img className="NavLogo" src={BBLogo}  alt="Logo"/>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}
           >

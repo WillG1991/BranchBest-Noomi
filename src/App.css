@@ -3,12 +3,13 @@
 /*background color of whole page */
 body {
   background-color: whitesmoke;
+  
+  
 }
 
 /*buffalo check background styling in header*/
 header {
   float:center;
-
   position: relative;
   width: 100%;
   height: 100px;
@@ -30,17 +31,19 @@ h1 {
   margin-right: 0;
   margin-left: 0;
   margin-bottom:2em;
-  color: black;
+  color: white;
 }
 
 
-#hero {
-  color:whitesmoke;
+.hero {
+  color:rgb(250, 245, 245);
   font-family: Playfair Display;
   font-size: 4rem;
   text-align: center;
   padding: 14px;
   margin-bottom:1em;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/Hero.png");
  
 
 /* Code below from: https://www.w3schools.com/howto/tryhow_css_fullpage_demo.htm */
@@ -60,9 +63,6 @@ section
     margin-left:auto;
 }
 
-.Footer {
-  background-color: blue;
-}
 
 
 col {
@@ -79,7 +79,7 @@ col {
   color: whitesmoke;
 }
 /*Make list centered */
-#hours {
+.hours {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,10 +123,33 @@ h3 {
   font-family: Montserrat;
 }
 
-
-footer {
-  background-color: aquamarine;
+.MenuBox {
+  background-color: white;
 }
+
+
+.footer {
+  background-color: #1876d2;
+  margin-top: 50px !important;
+}
+
+/* .Main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/MainBack.png");
+} */
+
+.Menu {
+  width: 80%;
+}
+
+
+.NavLogo {
+  height:50px;
+  width: 50px;
+}
+
+
+
+
 /* large screen size */
 @media screen and (min-width: 60em) {
 

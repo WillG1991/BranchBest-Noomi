@@ -1,10 +1,9 @@
 import React from "react";
-import { Container } from "@mui/system";
 
 function Hours() {
     return (
-        <Container>
-        <section id="hours">
+        
+        <section className="hours">
         <h2>Breakfast & Lunch Served All Day!</h2>
         <h3>BYOB</h3>
 
@@ -27,7 +26,7 @@ function Hours() {
            </ul>
        
        </section>
-       </Container>
+     
     );
   }
   

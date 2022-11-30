@@ -12,7 +12,7 @@ function Menu() {
       
       <Container>
         <Box>
-      <section id="Menu">
+      <section className="Menu" id="Menu">
       <h2 align="center">Menu</h2>
       <div>
         <Card>
@@ -34,7 +34,7 @@ function Menu() {
       </section>
       </Box>
   </Container>
- 
+
     );
   }
   

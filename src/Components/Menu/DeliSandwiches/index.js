@@ -1,11 +1,8 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-
 import { styled } from '@mui/material/styles';
-
 import Paper from '@mui/material/Paper';
 
 
@@ -20,7 +17,8 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function DeliSandwiches() {
     return (
         // ROW 1 START
-        <Box sx={{ flexGrow: 1 }}>
+        <div className="MenuBox">
+        <Box  sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
                 {/* -------------ITEM 1 Start--------------- */}
                 <Grid item xs={4}>
@@ -163,6 +161,7 @@ export default function DeliSandwiches() {
                 {/* --------ITEM 6 End----------- */}
             </Grid>
         </Box>
+        </div>
         ///////// ROW 2 END ///////////
 
 
