@@ -34,11 +34,11 @@ export const FooterContact = () => {
 };
 
 return (
-  <Container>
-    <Box>
- <section class="FooterContact">
+  <Container >
+    <Box >
+
 <h2 class="text-center varela-font">Contact Me</h2>
-<form ref={form} onSubmit={sendEmail}>
+<form className="FooterContact" ref={form} onSubmit={sendEmail}>
   <div class="borderBoxContact ">
     <div class="p-2 bd-highlight  justify-content-center">
       <label htmlFor="name">
@@ -68,7 +68,7 @@ return (
    
   </div>
 </form>
-</section>
+
 </Box>
 </Container>
 );

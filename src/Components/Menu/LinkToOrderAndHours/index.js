@@ -1,14 +1,35 @@
 import React from "react";
-import { Card } from "@mui/material";
+import Grid from '@mui/material/Grid';
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import Delivery from "../../LocationAndInfo/Delivery";
+import Hours from "../../LocationAndInfo/Hours";
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
 
 function LinkToOrderAndHours() {
     return (
-      <div>
-        LinkToOrder ----   Hours
-        <Card>
-      <p><a href="https://branchburgsbest.square.site/">Order Online</a></p>
-      </Card>
-      </div>
+     
+       <Grid className="footer" container spacing={2}>
+       <Grid item xs={6}>
+         <Item>
+         <Hours/>
+           </Item>
+       </Grid>
+       <Grid item xs={6}>
+         <Item>
+         <Delivery/>
+           </Item>
+       </Grid>
+     </Grid>
+     
+   
       
     );
   }

@@ -1,9 +1,10 @@
 import React from "react";
 
+
 function MenuImage() {
     return (
       <div>
-        Menu Image 2 Page carousel
+ MENU
       </div>
       
     );

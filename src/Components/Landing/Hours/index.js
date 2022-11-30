@@ -2,7 +2,6 @@ import React from "react";
 
 function Hours() {
     return (
-      <div>
         <section id="hours">
              <h2>Breakfast & Lunch Served All Day!</h2>
              <h3>BYOB</h3>
@@ -26,7 +25,6 @@ function Hours() {
                 </ul>
             
             </section>
-      </div>
       
     );
   }
