@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import About from './Components/About';
-import Catering from './Components/Catering';
+import CateringAndEvents from './Components/CateringAndEvents';
 import Hero from './Components/Hero';
 import Landing from './Components/Landing';
+import LocationAndInfo from './Components/LocationAndInfo';
 import Menu from './Components/Menu';
 import Nav from './Components/Nav';
-import OrderContact from './Components/OrderContact';
-import ContactForm from './Components/Contact';
+import Gallery from './Components/Gallery';
 import Footer from './Components/Footer';
 import "./App.css";
 
@@ -15,23 +15,23 @@ function App() {
   const [currentPage, setCurrentPage] = useState("Home");
 
   const renderPage = () => {
+   if (currentPage === "Main") {
+      return <Landing />;
+    }
+    if (currentPage === "Location & Info") {
+      return <LocationAndInfo />;
+    }
     if (currentPage === "About") {
       return <About />;
-    }
-    if (currentPage === "Catering") {
-      return <Catering />;
-    }
-    if (currentPage === "Landing") {
-      return <Landing />;
     }
     if (currentPage === "Menu") {
       return <Menu />;
     }
-    if (currentPage === "OrderContact") {
-      return <OrderContact />;
+    if (currentPage === "Catering & Events") {
+      return <CateringAndEvents />;
     }
-    if (currentPage === "Contact") {
-      return <ContactForm />;
+    if (currentPage === "Gallery") {
+      return <Gallery />;
     }
     
   };

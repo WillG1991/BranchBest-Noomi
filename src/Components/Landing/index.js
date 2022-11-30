@@ -3,8 +3,12 @@ import React from "react";
 function Landing() {
     return (
       <div>
-        Landing
+        HOURS/LOCATION/MENUSPECIAL
+        <br></br>
+        ABOUT US
+        <br></br>
       </div>
+      
     );
   }
   

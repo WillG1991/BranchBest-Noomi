@@ -15,7 +15,7 @@ import BBLogo from '../../Images/Logo.png'
 
 
 const drawerWidth = 240;
-const navItems = ['Menu', 'About', 'Catering', 'Contact', "Order Now"];
+const navItems = ['Main', 'Location & Info', 'Menu', 'Catering & Events', 'Gallery', "Order Now"];
 
 
 function Nav(props) {

@@ -1,5 +1,55 @@
-/*All below styling is designed for mobile layout.*/
+/* ----------------HERO START--------------*/
+.hero {
+  color:rgb(250, 245, 245);
+  font-family: Playfair Display;
+  font-size: 4rem;
+  text-align: center;
+  padding: 14px;
+  margin-bottom:1em;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/Hero.png");
+ /* Code below from: https://www.w3schools.com/howto/tryhow_css_fullpage_demo.htm */
+/* Full height background image */
+  height: 100%;
+/* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ----------------HERO END--------------*/
 
+
+
+
+
+/* ----------------NAV START--------------*/
+.NavLogo {
+  height:50px;
+  width: 50px;
+}
+/* ----------------NAV END--------------*/
+
+
+
+/* ----------------MAIN START--------------*/
+
+
+/* ----------------MAIN END--------------*/
+/* ----------------MAIN START--------------*/
+/* ----------------MAIN END--------------*/
+/* ----------------MAIN START--------------*/
+/* ----------------MAIN END--------------*/
+
+
+
+
+
+/* ----------------FOOTER START--------------*/
+.footer {
+  background-color: #1876d2;
+  margin-top: 50px !important;
+}
+/* ----------------FOOTER END--------------*/
 /*background color of whole page */
 body {
   background-color: whitesmoke;
@@ -35,25 +85,7 @@ h1 {
 }
 
 
-.hero {
-  color:rgb(250, 245, 245);
-  font-family: Playfair Display;
-  font-size: 4rem;
-  text-align: center;
-  padding: 14px;
-  margin-bottom:1em;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/Hero.png");
- 
 
-/* Code below from: https://www.w3schools.com/howto/tryhow_css_fullpage_demo.htm */
-/* Full height background image */
-  height: 100%;
-/* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 section
 {
@@ -128,10 +160,7 @@ h3 {
 }
 
 
-.footer {
-  background-color: #1876d2;
-  margin-top: 50px !important;
-}
+
 
 /* .Main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/MainBack.png");
@@ -142,10 +171,7 @@ h3 {
 }
 
 
-.NavLogo {
-  height:50px;
-  width: 50px;
-}
+
 
 
 
