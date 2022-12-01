@@ -8,6 +8,7 @@ import { Container } from "@mui/system";
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
+import "../../App.css";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -22,7 +23,9 @@ function LocationAndInfo() {
       <Container>
       <Address/>
       <Map/>
+      <Item>
       <Directions/>
+      </Item>
       <div>
       <Grid className="footer" container spacing={2}>
         <Grid item xs={6}>

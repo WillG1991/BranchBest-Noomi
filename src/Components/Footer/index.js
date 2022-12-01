@@ -5,6 +5,7 @@ import Grid from '@mui/material/Grid';
 import FooterContact from './FooterContact';
 import MailingList from './MailingList';
 import Socials from './Socials'
+import '../../App.css'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -18,12 +19,12 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Footer() {
   return (
-    <footer>
+    
    
-      <Grid className="footer" container spacing={2}>
+      <Grid className="Footer" container spacing={2}>
         <Grid item xs={4}>
           <Item>
-            <FooterContact/>
+            <FooterContact />
             </Item>
         </Grid>
         <Grid item xs={4}>
@@ -38,7 +39,7 @@ export default function Footer() {
         </Grid>
       </Grid>
       
-      </footer>
+   
   );
 }
 

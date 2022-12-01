@@ -45,8 +45,7 @@ function App() {
       <Nav currentPage={currentPage} handlePageChange={handlePageChange}></Nav>
       <main className="Main" id="Main">{renderPage()}</main>
       <body className="Body">
-        <div className="BodyContainer">
-        </div>
+        
       </body>
       <Footer/>
       </div>

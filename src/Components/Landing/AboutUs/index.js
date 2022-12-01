@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutUs() {
     return (
-<section id="about">
+<section align="center" id="about">
     <h2>About Us</h2>
     <h3>Good Food, Good Stuff!</h3>
     <div>

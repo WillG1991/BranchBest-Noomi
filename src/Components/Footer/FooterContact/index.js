@@ -1,11 +1,6 @@
 import emailjs from 'emailjs-com';
 import React, { useRef } from 'react';
 import { useState } from 'react';
-import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
-
-
-
 
 
 export const FooterContact = () => {
@@ -24,7 +19,7 @@ export const FooterContact = () => {
 
     emailjs.sendForm('service_miclkz2', 'template_3vy91zb', form.current, 'Fn_zxEFg1IdXStiDB')
     .then((result) => {
-      alert("Thanks for reaching out, I will get back to you soon!");
+      alert("Thanks for reaching out, We will get back to you soon!");
   }, (error) => {
       console.log(error.text);
   });
@@ -34,11 +29,10 @@ export const FooterContact = () => {
 };
 
 return (
-  <Container >
-    <Box >
+  <>
 
-<h2 class="text-center varela-font">Contact Me</h2>
-<form className="FooterContact" ref={form} onSubmit={sendEmail}>
+<h2 class="text-center varela-font">Get In Touch</h2>
+<form ref={form} onSubmit={sendEmail}>
   <div class="borderBoxContact ">
     <div class="p-2 bd-highlight  justify-content-center">
       <label htmlFor="name">
@@ -63,14 +57,10 @@ return (
   <input class="btnback btn btn-outline-info mt-4  justify-content-center"
       id="input_message" type="submit" value="Submit" />
     </div>
-   
-     
-   
   </div>
 </form>
+</>
 
-</Box>
-</Container>
 );
 }
 

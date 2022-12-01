@@ -88,23 +88,141 @@ col {
 
 
 /* ----------------MAIN END--------------*/
-/* ----------------MAIN START--------------*/
-/* ----------------MAIN END--------------*/
-/* ----------------MAIN START--------------*/
-/* ----------------MAIN END--------------*/
+
+
+
+
+
+
+
+
+
+/* ----------------Location and Info START--------------*/
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom:2em;
+  font-family: Montserrat;
+  font-size: larger;
+}
+
+.address h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom:2em;
+  font-family: Montserrat;
+  font-size: larger;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom:2em;
+  font-family: Montserrat;
+  font-size: larger;
+}
+
+.delivery h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom:2em;
+  font-family: Montserrat;
+  font-size: larger;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.directions  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom:2em;
+  font-family: Montserrat;
+  font-size: larger;
+}
+
+.directions h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom:2em;
+  font-family: Montserrat;
+  font-size: larger;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.mapImage {
+  height: 600px;
+  width: 800px;
+}
+/* ----------------Location and Info END--------------*/
+
+
+
+
+
+
+
+
+
+
+/* ----------------Catering START--------------*/
+
+
+
+
+
+
+/* ----------------Catering END--------------*/
+
+
+
+/* ----------------Gallery START--------------*/
+
+.imageSmall {
+  width: 10px;
+}
+
+
+
+
+/* ----------------Gallery END--------------*/
 
 
 
 
 
 /* ----------------FOOTER START--------------*/
-.footer {
+.Footer {
   background-color: whitesmoke;
   margin-top: 50px !important;
+  height: 350px;
 }
 
 .FooterContact {
-  height: 50px !important;
+  height: 100px !important;
 }
 
 /* ----------------FOOTER END--------------*/
@@ -118,7 +236,7 @@ col {
 
 /*background color of whole page */
 body {
-  background-color: whitesmoke;
+  background-color: white;
   
   
 }
