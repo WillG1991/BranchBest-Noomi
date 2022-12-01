@@ -48,21 +48,6 @@ src: "https://picsum.photos/800/600?random=9",
 width: 200,
 height: 150
 },
-{
-src: "https://picsum.photos/800/600?random=10",
-width: 400,
-      height: 225
-},
-{
-src: "https://picsum.photos/800/600?random=11",
-width: 200,
-height: 150
-},
-{
-src: "https://picsum.photos/800/600?random=12",
-width: 400,
-      height: 225
-}
 ];
 
 const photosLunch = [
@@ -111,21 +96,6 @@ src: "https://picsum.photos/800/600?random=9",
 width: 200,
 height: 150
 },
-{
-src: "https://picsum.photos/800/600?random=10",
-width: 400,
-      height: 225
-},
-{
-src: "https://picsum.photos/800/600?random=11",
-width: 200,
-height: 150
-},
-{
-src: "https://picsum.photos/800/600?random=12",
-width: 400,
-      height: 225
-}
 ];
 const photosCatering = [
   {
@@ -173,21 +143,6 @@ src: "https://picsum.photos/800/600?random=9",
 width: 200,
 height: 150
 },
-{
-src: "https://picsum.photos/800/600?random=10",
-width: 400,
-      height: 225
-},
-{
-src: "https://picsum.photos/800/600?random=11",
-width: 200,
-height: 150
-},
-{
-src: "https://picsum.photos/800/600?random=12",
-width: 400,
-      height: 225
-}
 ];
 
 
