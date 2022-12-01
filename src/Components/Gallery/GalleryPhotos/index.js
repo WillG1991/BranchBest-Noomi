@@ -1,39 +1,218 @@
 import React from "react";
-import Carousel from 'better-react-carousel'
+import PhotoAlbum from "react-photo-album";
+import Container from '@mui/material/Container';
+
+const photosBreakfast = [
+  {
+      src: "https://picsum.photos/200/150?random=1",
+      width: 200,
+      height: 150
+  },
+  {
+      src: "https://picsum.photos/800/600?random=2",
+      width: 400,
+      height: 225
+  },
+  {
+    src: "https://picsum.photos/800/600?random=3",
+    width: 200,
+      height: 150
+},
+{
+  src: "https://picsum.photos/800/600?random=4",
+  width: 400,
+  height: 225
+},
+{
+  src: "https://picsum.photos/800/600?random=5",
+  width: 200,
+  height: 150
+},
+{
+  src: "https://picsum.photos/800/600?random=6",
+  width: 400,
+  height: 225
+},
+{
+  src: "https://picsum.photos/800/600?random=7",
+  width: 200,
+  height: 150
+},
+{
+  src: "https://picsum.photos/800/600?random=8",
+  width: 400,
+  height: 225
+},
+{
+src: "https://picsum.photos/800/600?random=9",
+width: 200,
+height: 150
+},
+{
+src: "https://picsum.photos/800/600?random=10",
+width: 400,
+      height: 225
+},
+{
+src: "https://picsum.photos/800/600?random=11",
+width: 200,
+height: 150
+},
+{
+src: "https://picsum.photos/800/600?random=12",
+width: 400,
+      height: 225
+}
+];
+
+const photosLunch = [
+  {
+      src: "https://picsum.photos/200/150?random=1",
+      width: 200,
+      height: 150
+  },
+  {
+      src: "https://picsum.photos/800/600?random=2",
+      width: 400,
+      height: 225
+  },
+  {
+    src: "https://picsum.photos/800/600?random=3",
+    width: 200,
+      height: 150
+},
+{
+  src: "https://picsum.photos/800/600?random=4",
+  width: 400,
+  height: 225
+},
+{
+  src: "https://picsum.photos/800/600?random=5",
+  width: 200,
+  height: 150
+},
+{
+  src: "https://picsum.photos/800/600?random=6",
+  width: 400,
+  height: 225
+},
+{
+  src: "https://picsum.photos/800/600?random=7",
+  width: 200,
+  height: 150
+},
+{
+  src: "https://picsum.photos/800/600?random=8",
+  width: 400,
+  height: 225
+},
+{
+src: "https://picsum.photos/800/600?random=9",
+width: 200,
+height: 150
+},
+{
+src: "https://picsum.photos/800/600?random=10",
+width: 400,
+      height: 225
+},
+{
+src: "https://picsum.photos/800/600?random=11",
+width: 200,
+height: 150
+},
+{
+src: "https://picsum.photos/800/600?random=12",
+width: 400,
+      height: 225
+}
+];
+const photosCatering = [
+  {
+      src: "https://picsum.photos/200/150?random=1",
+      width: 200,
+      height: 150
+  },
+  {
+      src: "https://picsum.photos/800/600?random=2",
+      width: 400,
+      height: 225
+  },
+  {
+    src: "https://picsum.photos/800/600?random=3",
+    width: 200,
+      height: 150
+},
+{
+  src: "https://picsum.photos/800/600?random=4",
+  width: 400,
+  height: 225
+},
+{
+  src: "https://picsum.photos/800/600?random=5",
+  width: 200,
+  height: 150
+},
+{
+  src: "https://picsum.photos/800/600?random=6",
+  width: 400,
+  height: 225
+},
+{
+  src: "https://picsum.photos/800/600?random=7",
+  width: 200,
+  height: 150
+},
+{
+  src: "https://picsum.photos/800/600?random=8",
+  width: 400,
+  height: 225
+},
+{
+src: "https://picsum.photos/800/600?random=9",
+width: 200,
+height: 150
+},
+{
+src: "https://picsum.photos/800/600?random=10",
+width: 400,
+      height: 225
+},
+{
+src: "https://picsum.photos/800/600?random=11",
+width: 200,
+height: 150
+},
+{
+src: "https://picsum.photos/800/600?random=12",
+width: 400,
+      height: 225
+}
+];
 
 
 function GalleryPhotos() {
     return (
-      <Carousel className="imageSmall" cols={2} rows={2} gap={10} loop>
-      <Carousel.Item >
-        <img width="30%" src="https://picsum.photos/800/600?random=1" alt="image111" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="30%" src="https://picsum.photos/800/600?random=2" alt="image222"/>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="30%" src="https://picsum.photos/800/600?random=3"alt="image333"/>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="30%" src="https://picsum.photos/800/600?random=4"alt="image333"/>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="30%" src="https://picsum.photos/800/600?random=5"alt="image333"/>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="30%" src="https://picsum.photos/800/600?random=6"alt="image333"/>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img width="30%" src="https://picsum.photos/800/600?random=7"alt="image333"/>
-      </Carousel.Item>
-      <Carousel.Item>
-        {/* anything you want to show in the grid */}
-      </Carousel.Item>
-      {/* ... */}
-    </Carousel>
-      
+      <div>
+        <h2 align="center">Breakky</h2>
+        <Container>
+        <PhotoAlbum layout="rows" photos={photosBreakfast} />
+        </Container>
+      <h2 align="center">Lunch</h2>
+      <Container>
+      <PhotoAlbum layout="rows" photos={photosLunch} />
+      </Container>
+      <h2 align="center">Catering</h2>
+      <Container>
+      <PhotoAlbum layout="rows" photos={photosCatering} />
+      </Container>
+      </div>
     );
   }
   
   export default GalleryPhotos;
   
+
+
+
+
