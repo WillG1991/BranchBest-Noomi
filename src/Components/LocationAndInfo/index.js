@@ -20,6 +20,8 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function LocationAndInfo() {
     return (
+      <>
+      <h3 align="center">Get in touch with us:</h3>
       <Container>
       <Address/>
       <Map/>
@@ -43,6 +45,7 @@ function LocationAndInfo() {
       </div>
      
 </Container>
+</>
     );
   }
   
