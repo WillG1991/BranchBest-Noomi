@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/BranchBest-Noomi/static/css/main.727428e8.css",
+    "main.js": "/BranchBest-Noomi/static/js/main.cf4e4b1e.js",
+    "static/js/787.aed5686c.chunk.js": "/BranchBest-Noomi/static/js/787.aed5686c.chunk.js",
+    "static/media/Hero.png": "/BranchBest-Noomi/static/media/Hero.ffe25ec7690242249672.png",
+    "static/media/MenuPicTwo.png": "/BranchBest-Noomi/static/media/MenuPicTwo.71a2dee1724930722de4.png",
+    "static/media/MenuPicOne.png": "/BranchBest-Noomi/static/media/MenuPicOne.a8000b1ec19882b12402.png",
+    "static/media/Logo.png": "/BranchBest-Noomi/static/media/Logo.61dcace9de4a7cb08440.png",
+    "static/media/revicons.eot": "/BranchBest-Noomi/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/BranchBest-Noomi/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/BranchBest-Noomi/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/BranchBest-Noomi/index.html",
+    "main.727428e8.css.map": "/BranchBest-Noomi/static/css/main.727428e8.css.map",
+    "main.cf4e4b1e.js.map": "/BranchBest-Noomi/static/js/main.cf4e4b1e.js.map",
+    "787.aed5686c.chunk.js.map": "/BranchBest-Noomi/static/js/787.aed5686c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.727428e8.css",
+    "static/js/main.cf4e4b1e.js"
+  ]
+}
