@@ -12,13 +12,13 @@ function Menu() {
       <Container>
         <Box>
       <section className="Menu" id="Menu">
-      <h2 align="center">Menu</h2>
+      <h2 className="menuHeader" align="center">Menu</h2>
       <div>
         <Card align="center">
        <p><a href="https://www.facebook.com/branchburgsbest">Today's Specials</a></p>
         <p>Breakfast & Lunch All Day</p>
         </Card>
-        <MenuImage/>
+        <MenuImage className="menuImage"/>
         <LinkToOrderAndHours/>
       </div>
       </section>

@@ -1,26 +1,35 @@
-import React from "react";
-import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
+import React from 'react';
+import {
+  MDBFooter,
+  MDBContainer,
+  MDBBtn,
+  MDBCol,
+  MDBRow,
+  MDBInput
+} from 'mdb-react-ui-kit';
 
-
-
-
-function MailingList() {
-    return (
-     
+export default function MailingList() {
+  return (
+ 
       
-      <>
-        <div>
-        Join Our Mailing List
-        </div>
-        <div>
-        <TextField id="outlined-basic" label="Email" variant="outlined" />
-        </div>
-        <Button variant="contained">Submit</Button>
-        </>
-       
-    
-    );
-  }
-  
-  export default MailingList;
+        <form action=''>
+          <MDBRow className='d-flex justify-content-center'>
+            <MDBCol size='auto' className='mb-4 mb-md-0'>
+              <p className='pt-2'>
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </MDBCol>
+
+            <MDBCol md='5' size='12' className='mb-4 mb-md-0'>
+              <MDBInput type='text' id='form5Example2' label='Email address' />
+            </MDBCol>
+
+            <MDBCol size='auto' className='mb-4 mb-md-0'>
+              <MDBBtn>Subscribe</MDBBtn>
+            </MDBCol>
+          </MDBRow>
+        </form>
+      
+   
+  );
+}

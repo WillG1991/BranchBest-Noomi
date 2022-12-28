@@ -20,26 +20,31 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function Footer() {
   return (
     
-   
+   <>
       <Grid className="Footer" container spacing={2}>
         <Grid item xs={4}>
-          <Item>
-            <FooterContact />
+          <Item className='footerItem'>
+            <MailingList/>
             </Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>
-            <Socials/>
+          <Item className='footerItem'>
+          <FooterContact />
             </Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>
-          <MailingList/>
+          <Item className='footerItem'>
+          <Socials/>
           </Item>
         </Grid>
       </Grid>
-      
-   
+      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+      &copy; {new Date().getFullYear()} Copyright:{' '}
+      <a className='text-dark' href="BranchburgsBest.com">
+        Branchburgs Best 2022
+      </a>
+    </div>
+   </>
   );
 }
 

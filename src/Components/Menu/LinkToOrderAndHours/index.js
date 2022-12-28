@@ -16,14 +16,14 @@ const Item = styled(Paper)(({ theme }) => ({
 function LinkToOrderAndHours() {
     return (
      
-       <Grid className="footer" container spacing={2}>
-       <Grid item xs={6}>
-         <Item>
+       <Grid container spacing={2}>
+       <Grid Item className="linkOrderAndHours" item xs={6}>
+         <Item className="orderHoursItem">
          <Hours/>
            </Item>
        </Grid>
-       <Grid item xs={6}>
-         <Item>
+       <Grid Item className="linkOrderAndHours" item xs={6}>
+         <Item className="orderHoursItem">
          <Delivery/>
            </Item>
        </Grid>

@@ -15,7 +15,10 @@ function App() {
   const [currentPage, setCurrentPage] = useState("Home");
 
   const renderPage = () => {
-   if (currentPage === "Main") {
+   if (currentPage === "Home") {
+      return <Landing />;
+    }
+    if (currentPage === "Main") {
       return <Landing />;
     }
     if (currentPage === "Location & Info") {
@@ -33,6 +36,7 @@ function App() {
     if (currentPage === "Gallery") {
       return <Gallery />;
     }
+    
     
     
   };
