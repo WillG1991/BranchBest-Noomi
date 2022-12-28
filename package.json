@@ -16,7 +16,6 @@
     "better-react-carousel": "^1.1.1",
     "bootstrap": "^5.2.3",
     "emailjs-com": "^3.2.0",
-    "gh-pages": "^4.0.0",
     "mdb-react-ui-kit": "^5.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
@@ -55,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
